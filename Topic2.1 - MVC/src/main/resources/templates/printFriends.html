@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Friends</title>
+	</head>
+	<body>	
+		<h1>These are some of my friends:</h1>
+		<table>
+			<thead>
+				<tr>
+					<td>ID</td>
+					<td>Name</td>
+					<td>Age</td>
+					<td>Weight</td>
+				</tr>
+			</thead>
+			<tbody>	
+				<tr th:each = "p : ${people}">
+					<td th:text="${p.id}">id</td>
+					<td th:text="${p.name}">name</td>
+					<td th:text="${p.age}">age</td>
+					<td th:text="${p.weight}">weight</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+	
+</html>
